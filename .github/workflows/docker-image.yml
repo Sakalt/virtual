@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag v86-networking:$(date +%s) && docker run --privileged -p 8080:80 --name relay
+      run: docker build . --file Dockerfile --tag v86-networking:$(date +%s) && docker run --privileged -p 8080:80 --name relay relay
