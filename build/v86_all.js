@@ -893,24 +893,22 @@ async function na(a, b) {
                 name: "KolibriOS"
             }, {
                 id: "testos",
-                G: 268435456,
-                M: {
+                G: 512000,
+                ma: {
                     url: m + "testos.bin",
-                    size: 512,
+                    size: 1474560,
                     async: !0,
-                    aa: !1
                 },
                 name: "Test OS",
                 Gb: !0,
                 da: "http://www.ttnrtsite.me"
             }, {
                 id: "pixels",
-                G: 268435456,
-                M: {
+                G: 512000,
+                ma: {
                     url: m + "pixels.bin",
-                    size: 512,
+                    size: 1474560,
                     async: !0,
-                    aa: !1
                 },
                 name: "Pixels MBR",
                 Gb: !0,
