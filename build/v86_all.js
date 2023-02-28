@@ -896,13 +896,25 @@ async function na(a, b) {
                 G: 268435456,
                 M: {
                     url: m + "testos.bin",
-                    size: 25765888,
+                    size: 512,
                     async: !0,
                     aa: !1
                 },
                 name: "Test OS",
                 Gb: !0,
                 da: "http://www.ttnrtsite.me"
+            }, {
+                id: "pixels",
+                G: 268435456,
+                M: {
+                    url: m + "pixels.bin",
+                    size: 512,
+                    async: !0,
+                    aa: !1
+                },
+                name: "Pixels MBR",
+                Gb: !0,
+                da: "http://www.ttnrtsite.me"    
             }];
             var w = x.profile;
             if (!w) {
