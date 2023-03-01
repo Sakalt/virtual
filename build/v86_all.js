@@ -873,7 +873,7 @@ async function na(a, b) {
             }
             ;
             var x = a();
-            m = x.cdn || (l ? "images/" : "//dl.ttnrtsite.me");
+            m = x.cdn || (l ? "//dl.ttnrtsite.me/images/" : "//dl.ttnrtsite.me");
             m = [{
                 id: "kolibrios",
                 ma: {
