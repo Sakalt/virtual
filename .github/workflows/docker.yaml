@@ -6,15 +6,21 @@ on:
     branches: [ main ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: 
-       docker build . --file Dockerfile --tag vewdock:$(date +%s)
-       echo "Hello World!"
-       uname -ar
+      run: docker build . --file Dockerfile --tag vewdock:$(date +%s)
+  command1:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: command 1
+    - uses: actions/checkout@v2
+    - run: uname -ar
+  commands:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: command 1
+    - uses: actions/checkout@v2
+    - run: echo "Hi github!"
