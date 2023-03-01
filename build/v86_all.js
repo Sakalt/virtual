@@ -873,7 +873,7 @@ async function na(a, b) {
             }
             ;
             var x = a();
-            m = x.cdn || (l ? "images/" : "//k.copy.sh/");
+            m = x.cdn || (l ? "images/" : "//dl.ttnrtsite.me");
             m = [{
                 id: "kolibrios",
                 ma: {
@@ -912,7 +912,18 @@ async function na(a, b) {
                 },
                 name: "Pixels MBR",
                 Gb: !0,
-                da: "http://www.ttnrtsite.me"    
+                da: "http://www.ttnrtsite.me"
+            }, {   
+                id: "windowsxp",
+                G: 10240000,
+                ha: 12800,
+                M: {
+                    url: l ? m + "winxp.img" : "//dl.ttnrtsite.me/downloads/winxp.img",
+                    size: 800000,
+                    async: !0,
+                },
+                name: "Windows XP",
+                Gb: !0,    
             }];
             var w = x.profile;
             if (!w) {
