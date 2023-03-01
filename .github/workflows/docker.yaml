@@ -12,15 +12,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag vewdock:$(date +%s)
-  command1:
-    runs-on: ubuntu-22.04
-    steps:
-    - name: command 1
-    - uses: actions/checkout@v2
-    - run: uname -ar
   commands:
-    runs-on: ubuntu-22.04
+   runs-on: ubuntu-latest
     steps:
-    - name: command 1
-    - uses: actions/checkout@v2
-    - run: echo "Hi github!"
+    - name: commandsr
+      run: |
+        uname -ar
+        echo "Hi GitHub"
