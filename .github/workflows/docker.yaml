@@ -1,4 +1,5 @@
-name: Docker Deploy
+name: Docker Image CI
+
 on:
   push:
     branches: [ main ]
@@ -6,21 +7,12 @@ on:
     branches: [ main ]
 
 jobs:
+
   build:
+
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag vewdock:$(date +%s)
-  test:
-    runs-on: ubuntu-latest
-    steps:
-    - name: checkout
-      uses: actions/checkout@v2
-
-    - uses: actions/cache@v2
-      id: cache-rustup
-    - name: apt install
-      run: uname -ar
-    - name: make all-debug
-      run: echo "hello github"
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
