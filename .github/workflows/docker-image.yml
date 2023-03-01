@@ -24,4 +24,4 @@ jobs:
      steps:
      - uses: actions/checkout@v3
      - name: Running the app now
-       run: docker run -p 8080:80 --name my-image-name -it ubuntu
+       run: docker run -p 8080:80 --name my-image-name
