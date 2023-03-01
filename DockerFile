@@ -1,6 +1,0 @@
-FROM ubuntu:focal
-
-RUN echo "Hello World"
-
-RUN uname -ar
-
