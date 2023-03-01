@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: cd /home/runner/work/v64/v64/websockproxy/ && docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: cd /home/runner/work/v64/v64/websockproxy/ && docker build . --file Dockerfile --tag my-image-name
 
   runing:
 
@@ -24,4 +24,4 @@ jobs:
      steps:
      - uses: actions/checkout@v3
      - name: Running the app now
-       run: docker run -p 8080:80 benjamincburns/jor1k-relay:latest --name relay -d
+       run: docker run -p 8080:80 benjamincburns/jor1k-relay:latest -d --name my-image-name
