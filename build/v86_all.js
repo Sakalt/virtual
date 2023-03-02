@@ -873,7 +873,7 @@ async function na(a, b) {
             }
             ;
             var x = a();
-            m = x.cdn || (l ? "//dl.ttnrtsite.me/images/" : "//dl.ttnrtsite.me");
+            m = x.cdn || (l ? "images/" : "//dl.ttnrtsite.me");
             m = [{
                 id: "kolibrios",
                 ma: {
@@ -897,7 +897,7 @@ async function na(a, b) {
                 ma: {
                     url: m + "testos.bin",
                     size: 1474560,
-                    async: !0,
+                    async: !1,
                 },
                 name: "Test OS",
                 Gb: !0,
@@ -908,7 +908,7 @@ async function na(a, b) {
                 ma: {
                     url: m + "pixels.bin",
                     size: 1474560,
-                    async: !0,
+                    async: !1,
                 },
                 name: "Pixels MBR",
                 Gb: !0,
@@ -920,7 +920,7 @@ async function na(a, b) {
                 M: {
                     url: m + "winxp.img",
                     size: 8589934592,
-                    async: !0,
+                    async: !1,
                 },
                 name: "Windows XP",
                 Gb: !0,    
