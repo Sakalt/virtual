@@ -915,11 +915,11 @@ async function na(a, b) {
                 da: "http://www.ttnrtsite.me"
             }, {   
                 id: "windowsxp",
-                G: 10240000,
-                ha: 12800,
+                G: 1073741824,
+                ha: 134217728,
                 M: {
-                    url: l ? m + "winxp.img" : "//dl.ttnrtsite.me/downloads/winxp.img",
-                    size: 800000,
+                    url: m + "winxp.img",
+                    size: 8589934592,
                     async: !0,
                 },
                 name: "Windows XP",
