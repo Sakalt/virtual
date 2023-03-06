@@ -873,7 +873,7 @@ async function na(a, b) {
             }
             ;
             var x = a();
-            m = x.cdn || (l ? "images/" : "//dl.ttnrtsite.me");
+            m = x.cdn || (l ? "images/" : "//k.copy.sh/");
             m = [{
                 id: "kolibrios",
                 ma: {
@@ -923,7 +923,21 @@ async function na(a, b) {
                     async: !1,
                 },
                 name: "Windows XP",
-                Gb: !0,    
+                Gb: !0,
+            }, {
+                id: "windows2000",
+                G: 536870912,
+                M: {
+                    url: m + "windows2k.img",
+                    size: 2147483648,
+                    async: !0,
+                    ca: !l
+                },
+                name: "Windows 2000",
+                //state: {
+                //    url: m + "windows2k_state-v2.bin.zst"
+                //},
+                Gb: !0      
             }];
             var w = x.profile;
             if (!w) {
