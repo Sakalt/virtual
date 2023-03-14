@@ -913,31 +913,44 @@ async function na(a, b) {
                 name: "Pixels MBR",
                 Gb: !0,
                 da: "http://www.ttnrtsite.me"
-            }, {   
-                id: "windowsxp",
-                G: 1073741824,
-                ha: 134217728,
-                M: {
-                    url: m + "winxp.img",
-                    size: 8589934592,
-                    async: !1,
-                },
-                name: "Windows XP",
-                Gb: !0,
             }, {
                 id: "windows2000",
-                G: 536870912,
-                M: {
-                    url: m + "windows2k.img",
+                H: 536870912,
+                N: {
+                    url: m + "windows2000.img",
                     size: 2147483648,
                     async: !0,
+                    J: 262144,
                     ca: !l
                 },
                 name: "Windows 2000",
-                //state: {
-                //    url: m + "windows2k_state-v2.bin.zst"
-                //},
-                Gb: !0      
+                state: {
+                    url: m + "windows2k-state.bin"
+                },
+                Gb: !0
+            }, {
+                id: "windows2000-boot",
+                H: 536870912,
+                N: {
+                    url: m + "windows2000.img",
+                    size: 2147483648,
+                    async: !0,
+                    J: 262144,
+                    ca: !l
+                },
+                oc: 306,
+                name: "Windows 2000"
+            },{    
+                id: "windows98",
+                G: 1073741824,
+                ha: 134217728,
+                M: {
+                    url: m + "win98.img",
+                    size: 2147483648,
+                    async: !1,
+                },
+                name: "Windows 98",
+                Gb: !0,
             }];
             var w = x.profile;
             if (!w) {
@@ -1062,7 +1075,7 @@ async function na(a, b) {
             screen_container: c("screen_container"),
             serial_container_xtermjs: c("terminal"),
             boot_order: q.oc || parseInt(c("boot_order").value, 16) || 0,
-            network_relay_url: l ? "wss://relay.widgetry.org/" : x,
+            network_relay_url: l ? "wss://relay.ttnrtsite.me" : x,
             bios: B,
             vga_bios: F,
             fda: q.ma,
