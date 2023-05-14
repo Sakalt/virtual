@@ -44,14 +44,14 @@
     background-color: #000;
 }
 body {
-    background-color: #111;
+    background-color: #313131;
     color: #fff;
     line-height: 1.5;
     padding: 10px;
     font-family: sans-serif;
 }
 a {
-    color: wheat;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .phone_keyboard {
