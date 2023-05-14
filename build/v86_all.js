@@ -1075,7 +1075,7 @@ async function na(a, b) {
             screen_container: c("screen_container"),
             serial_container_xtermjs: c("terminal"),
             boot_order: q.oc || parseInt(c("boot_order").value, 16) || 0,
-            network_relay_url: l ? "wss://relay.ttnrtsite.me" : x,
+            network_relay_url: l ? "wss://relay.widgetry.org" : x,
             bios: B,
             vga_bios: F,
             fda: q.ma,
